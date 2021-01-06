@@ -1,0 +1,197 @@
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
+.container {
+  width: 75%;
+  margin: 110px auto 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 90%;
+    margin: 50px auto;
+  }
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+  .description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.description .title {
+  font-family: "PT Serif";
+  font-size: 30px;
+  width: 280px;
+}
+
+.description .about {
+  font-size: 18px;
+  width: 439px;
+  margin-left: 215px;
+}
+
+@media screen and (max-width: 700px) {
+  .description .about {
+    margin-left: 0;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 26px;
+  }
+}
+
+.description .about .title {
+  font-family: Poppins;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.images {
+  margin: 100px 0 150px;
+}
+
+@media screen and (max-width: 700px) {
+  .images {
+    margin: 50px 0 100px;
+  }
+}
+
+.images .section_1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (width: 768px) {
+  .images .section_1 {
+    gap: 60px;
+  }
+}
+
+@media screen and (width: 1024px) {
+  .images .section_1 {
+    gap: 60px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .images .section_1 {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    gap: 60px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+
+.images .section_1 .profil {
+  position: relative;
+}
+
+.images .section_1 .profil:nth-child(2), .images .section_1 .profil:nth-child(5) {
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+}
+
+@media screen and (max-width: 700px) {
+  .images .section_1 .profil {
+    width: 95%;
+    height: 100%;
+  }
+  .images .section_1 .profil:nth-child(2), .images .section_1 .profil:nth-child(4), .images .section_1 .profil:nth-child(6) {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  .images .section_1 .profil:nth-child(5) {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.images .section_1 .profil img {
+  width: 100%;
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.images .section_1 .profil h3 {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .images .section_1 .profil h3 {
+    font-size: 14px;
+  }
+}
+
+.images .section_1 .profil .status {
+  text-transform: uppercase;
+  font-family: "PT serif";
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 150px;
+  top: 150px;
+  right: -25px;
+}
+
+@media screen and (max-width: 700px) {
+  .images .section_1 .profil .status {
+    font-size: 10px;
+    right: -15px;
+  }
+}
+
+.attribution {
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 700px) {
+  .attribution {
+    font-size: 12px;
+  }
+}
+
+.attribution a {
+  text-decoration: none;
+  color: dodgerblue;
+}
+/*# sourceMappingURL=style.css.map */

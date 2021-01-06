@@ -1,0 +1,151 @@
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+$status_width : 150px;
+
+body {
+    background-color: #FAFAFA;
+}
+
+    .container {
+        width: 75%;
+        margin: 110px auto 50px;
+
+        @media screen  and (max-width : 700px){   
+            width: 90%;
+            margin: 50px auto;
+        }
+    }
+
+        .description {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            @media screen  and (max-width : 700px){  
+                flex-direction: column;  
+            }
+
+            & .title {
+                font-family: "PT Serif";
+                font-size: 30px;
+                width: 280px;
+            }
+
+            & .about {
+                font-size: 18px;
+                width: 439px;
+                margin-left: 215px;
+                @media screen  and (max-width : 700px){
+                    margin-left: 0;
+                    font-size: 14px; 
+                    width: 100%;
+                    margin-top: 26px;
+                }
+
+                & .title {
+                    font-family: Poppins;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .images {
+            margin: 100px 0 150px;
+            @media screen  and (max-width : 700px){    
+                margin: 50px 0 100px;
+            }
+            & .section_1 {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 100px;
+                align-items: flex-start;
+
+                @media screen  and (width : 768px){  
+                    gap: 60px;
+                }
+                @media screen  and (width : 1024px){  
+                    gap: 60px;
+                }
+                
+                @media screen  and (max-width : 700px){  
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(3, 1fr);  
+                    gap: 60px;
+                    column-gap: 30px;
+                }
+
+                & .profil {
+                    // width: 240px;
+                    // height: 400px;
+                    position: relative;
+
+                    &:nth-child(2), &:nth-child(5){
+                        transform: translateY(70px);
+                    }
+                    @media screen  and (max-width : 700px){
+                        width: 95%;  
+                        height: 100%; 
+
+                        &:nth-child(2), &:nth-child(4), &:nth-child(6){
+                            transform: translateY(50px);
+                        }
+
+                        &:nth-child(5){
+                            transform: translateY(0);
+                        }
+                    }
+                    
+
+                    & img {
+                        width: 100%;
+                        box-shadow: 0 10px 15px rgba($color: #000000, $alpha: .3);
+                    }
+
+                    & h3 {
+                        margin-top: 15px;
+                        @media screen  and (max-width : 700px){
+                            font-size: 14px;
+                            
+                        }
+                    }
+                    & .status {
+                        text-transform: uppercase;
+                        font-family: "PT serif";
+                        font-size: 12px;
+                        font-weight: 600;
+                        position: absolute;
+                        transform-origin: top right;
+                        transform: rotate(90deg);
+                        width: $status_width;
+                        top: $status_width;
+                        right: -25px;
+                        @media screen  and (max-width : 700px){   
+                            font-size: 10px;
+                            right: -15px;
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+
+        .attribution {
+            margin: auto;
+            text-align: center;
+            font-size: 14px;
+            @media screen  and (max-width : 700px){   
+                font-size: 12px;
+            }
+
+            & a {
+                text-decoration: none;
+                color: dodgerblue;
+            }
+        }
