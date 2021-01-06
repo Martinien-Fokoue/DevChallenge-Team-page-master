@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://dev-challenge-team-page-master-git-master.martinien-fokoue.vercel.app/">
       Demo
     </a>
     <span> | </span>
@@ -50,7 +50,7 @@ _MobileView_
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo? <a hreh="">Live Demo</a>
+- Where can I see your demo? <a hreh="https://dev-challenge-team-page-master-git-master.martinien-fokoue.vercel.app/">Live Demo</a>
 - What was your experience? i learned about Grid system
 - What have you learned/improved?
 - Your wisdom? :)
